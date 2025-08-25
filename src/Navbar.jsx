@@ -1,10 +1,10 @@
 import HamburgerImg from './assets/Hamburger_icon.svg.png';
 
-function Navbar() {
+function Navbar({menuToggle}) {
 
     return (
         <>
-            <nav className='flex justify-between items-center pt-4 px-8 bg-transparent'>
+            <nav className='fixed top-0 w-full flex justify-between items-center pt-4 px-8 bg-transparent z-50'>
                 <h1 className='text-white font-bold text-2xl'>
                     <a href="#home">
                         Clan Manager
@@ -15,9 +15,10 @@ function Navbar() {
                     <li>
                         <a>
                             <img 
-                                className='w-10 h-10'
+                                className='w-10 h-10 hover:cursor-pointer'
                                 alt='Menu'
                                 src={HamburgerImg}
+                                onClick={menuToggle}
                             />
                         </a>
                     </li>

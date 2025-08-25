@@ -2,7 +2,7 @@
 function Welcome() {
     return (
         <>
-            <div className='m-5 mt-20'>
+            <div id='home' className='m-5 mt-50 shadow-lg'>
                 <h1
                     className="text-white font-semibold text-4xl mb-2"
                 >
